@@ -1,0 +1,54 @@
+:root {
+    --cor-principal: white;
+    --cor-texto: black;
+}
+
+body {
+    background-color: var(--cor-principal);
+    margin: 0;
+    height: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin-left: 30px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+     box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
+    background-color: aquamarine;
+}
+
+div#container {
+    border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
+    background-color: rgb(128, 219, 241);
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+input {
+    margin-top: 30px;
+    width: 20%;
+    height: 20px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
+}
+
+span#resposta {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}

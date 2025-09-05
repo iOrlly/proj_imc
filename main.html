@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Calculadora IMC</h1>
-    </header>
-    <main>
-        <div id="container">
-            <label for="altura">Altura</label>
-            <input type="number" name="altura" id="altura">
-            <label for="peso">Peso</label>
-            <input type="number" name="peso" id="peso">
-            <button onclick="res()">Calcular</button>
-        </div>
-    </main>
-    <script src="calculadora.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora IMC</h1>
+        </header>
+        <main>
+            <div id="container">
+                
+                <label for="altura">
+                    Altura <input type="number" name="altura" id="altura">
+                </label>
+                <label for="peso">
+                    Peso <input type="number" name="peso" id="peso">
+                </label>
+
+                <button onclick="res()">Calcular</button>
+
+                <span id="resposta"></span>
+
+            </div>
+        </main>
+        <script src="calculadora.js"></script>
+    </body>
 </html>
