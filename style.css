@@ -1,6 +1,7 @@
 :root {
     --cor-principal: white;
     --cor-texto: black;
+    --cor-botao: aquamarine;
 }
 
 body {
@@ -21,7 +22,7 @@ button {
     border-radius: 10px;
     border: none;
      box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
-    background-color: aquamarine;
+    background-color: var(--cor-botao);
 }
 
 div#container {
@@ -29,7 +30,7 @@ div#container {
      box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
     background-color: rgb(128, 219, 241);
     width: 80%;
-    height: 200px;
+    height: 400px;
     margin: auto;
 }
 
@@ -49,6 +50,10 @@ input {
 
 span#resposta {
     display: block;
-    text-align: center;
-    margin-top: 50px;
+    font-family: "Times New Roman", serif;
+    font-size: 12pt; /* 'pt' (pontos) é a unidade mais comum para este tipo de formatação */
+    text-align: justify;
+    color: #555; /* Uma cor mais suave para o texto de apoio */
+    margin-top: 15px auto;
+    padding-top: 15px;
 }

@@ -12,16 +12,16 @@
         </header>
         <main>
             <div id="container">
+                <div id="clear">
+                    <label for="altura">
+                        Altura <input type="number" name="altura" id="altura">
+                    </label>
+                    <label for="peso">
+                        Peso <input type="number" name="peso" id="peso">
+                    </label>
+                    <button onclick="calcImc()">Calcular</button>
+                </div>
                 
-                <label for="altura">
-                    Altura <input type="number" name="altura" id="altura">
-                </label>
-                <label for="peso">
-                    Peso <input type="number" name="peso" id="peso">
-                </label>
-
-                <button onclick="res()">Calcular</button>
-
                 <span id="resposta"></span>
 
             </div>
