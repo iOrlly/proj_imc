@@ -1,7 +1,11 @@
 function calcImc(){
+    let container = document.getElementById('container')
     let peso = parseFloat(document.getElementById('peso').value)
     let altura = parseFloat(document.getElementById('altura').value)
-    let resposta = document.getElementById('resposta')
+    //let resposta = document.getElementById('resposta')
+    let resposta = document.createElement('span')
+    resposta.classList.add('resposta')
+    container.appendChild(resposta)
 
         if(isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
         resposta.innerHTML = `Os valores de altura e peso devem ser maiores do que <strong>0 (zero)<strong>`

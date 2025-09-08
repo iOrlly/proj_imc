@@ -1,17 +1,14 @@
 :root {
     --cor-principal: white;
-    --cor-texto: rgb(0, 0, 0);
-    --cor-botao: rgba(127, 255, 212, 0.692);
+    --cor-texto: #F0F8FF;
+    --cor-botao: #A9A9A1;
+    --cor-card: rgba(10, 25, 20, 0.336);
 }
 
 body {
     background-color: var(--cor-principal);
     margin: 0;
     height: 0;
-}
-
-h1 {
-    text-align: center;
 }
 
 button {
@@ -25,13 +22,20 @@ button {
     background-color: var(--cor-botao);
 }
 
+h1 {
+    margin-top: 80px;
+}
+
 div#container {
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    backdrop-filter: blur(1px);
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
-    background-color: rgba(128, 218, 241, 0.103);
+    box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 4px;
     width: 80%;
     height: 400px;
     margin: auto;
+    text-align: center;
 }
 
 label {
@@ -53,17 +57,19 @@ input {
 ===================================================================*/
 span {
     margin: 40px;
+    
 }
 
-span#resposta {
+.resposta {
     display: block;
-    font-family: "Times New Roman", serif;
+    font-family: "Arial", serif;
     font-size: 12pt;
     text-align: justify;
-    color: var(--cor-principal);
+    color: var(--cor-texto);
     margin-top: 15px auto;
     padding-top: 15px;
     line-height: 1.5;
+    /*background-color: rgba(255, 255, 255, 0.644);*/
 }
 
 /*=========================================================================
