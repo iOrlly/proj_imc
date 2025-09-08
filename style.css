@@ -1,7 +1,7 @@
 :root {
     --cor-principal: white;
-    --cor-texto: black;
-    --cor-botao: aquamarine;
+    --cor-texto: rgb(0, 0, 0);
+    --cor-botao: rgba(127, 255, 212, 0.692);
 }
 
 body {
@@ -21,14 +21,14 @@ button {
     cursor: pointer;
     border-radius: 10px;
     border: none;
-     box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
+    box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
     background-color: var(--cor-botao);
 }
 
 div#container {
     border-radius: 5px;
-     box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
-    background-color: rgb(128, 219, 241);
+    box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
+    background-color: rgba(128, 218, 241, 0.103);
     width: 80%;
     height: 400px;
     margin: auto;
@@ -48,12 +48,35 @@ input {
     box-shadow: rgba(0, 0, 0, 0.445) 4px 4px 8px 2px;
 }
 
+/*==================================================================
+                    Texto de resposta da calculadora
+===================================================================*/
+span {
+    margin: 40px;
+}
+
 span#resposta {
     display: block;
     font-family: "Times New Roman", serif;
-    font-size: 12pt; /* 'pt' (pontos) é a unidade mais comum para este tipo de formatação */
+    font-size: 12pt;
     text-align: justify;
-    color: #555; /* Uma cor mais suave para o texto de apoio */
+    color: var(--cor-principal);
     margin-top: 15px auto;
     padding-top: 15px;
+    line-height: 1.5;
+}
+
+/*=========================================================================
+            Imagem de fundo
+===========================================================================*/
+img {
+    position: absolute;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

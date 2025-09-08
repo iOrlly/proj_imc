@@ -4,7 +4,7 @@ function calcImc(){
     let resposta = document.getElementById('resposta')
 
         if(isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-        resposta.innerHTML = `Os valores de altura e peso devem ser maiores que <strong>0 (zero)<strong>`
+        resposta.innerHTML = `Os valores de altura e peso devem ser maiores do que <strong>0 (zero)<strong>`
         return;
     }
 
@@ -60,7 +60,7 @@ function calcImc(){
         exige atenção e cuidado médico imediatos. É crucial estar sob a supervisão de uma equipe 
         multidisciplinar para um tratamento seguro e eficaz. O acompanhamento profissional é o 
         caminho mais seguro para recuperar a saúde e melhorar significativamente sua qualidade de 
-        vida.`
+        vida.`;
     }
     resposta.innerHTML = 
         `Seu IMC é ${imc.toFixed(2)}. ${classificacao}

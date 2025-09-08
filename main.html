@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Cálculo IMC</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -12,19 +12,19 @@
         </header>
         <main>
             <div id="container">
-                <div id="clear">
-                    <label for="altura">
-                        Altura <input type="number" name="altura" id="altura">
-                    </label>
-                    <label for="peso">
-                        Peso <input type="number" name="peso" id="peso">
-                    </label>
-                    <button onclick="calcImc()">Calcular</button>
-                </div>
                 
+                <label for="altura">
+                    Altura <input type="number" name="altura" id="altura">
+                </label>
+                <label for="peso">
+                    Peso <input type="number" name="peso" id="peso">
+                </label>
+                <button onclick="calcImc()">Calcular</button>
+
                 <span id="resposta"></span>
 
             </div>
+            <img src="./imagem/saude.jpg" alt="Corrida ao ar livre">
         </main>
         <script src="calculadora.js"></script>
     </body>
